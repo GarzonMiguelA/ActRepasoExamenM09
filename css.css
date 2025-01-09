@@ -1,0 +1,91 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+}
+
+header h1 {
+    color: white;
+}
+
+header img {
+    height: 50px;
+}
+
+header nav {
+    gap: 20px;
+    font-family: Arial, sans-serif;
+}
+
+header nav a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+main .video{
+    padding: 20px;
+    text-align: center;
+}
+
+main .video video {
+    width: 100%;
+    max-width: 1000px; 
+}
+
+main h2{
+    text-align: center;
+}
+
+.Peliculas{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px; 
+}
+
+.Peliculas img{
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.divPeliculas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 200px;
+    grid-row-gap: 10px;
+}
+
+/* Procedemos hacer las media querys: */
+@media (max-width: 750px) {
+    .Peliculas img{
+        width: 200px;
+        height: auto;
+        border-radius: 10px;
+    }
+    .divPeliculas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 100px;
+        grid-row-gap: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .Peliculas img{
+        width: 200px;
+        height: auto;
+        border-radius: 10px;
+    }
+    .divPeliculas {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 50px;
+        grid-row-gap: 10px;
+    }
+}
