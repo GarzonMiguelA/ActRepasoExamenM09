@@ -1,3 +1,8 @@
+*{
+    /* Ponemos un degradado gris de fondo */
+    background: linear-gradient(90deg, hsl(0, 0%, 20%), hsl(0, 0%, 10%));  
+}
+
 header {
     display: flex;
     justify-content: space-between;
